@@ -9,7 +9,7 @@ Teleport For ESX server
 3. Indítsd újra a szervered
 
 # Szükséges scriptek
-[k5_notify(https://github.com/kac5a/k5_notify/)]
+[k5_notify](https://github.com/kac5a/k5_notify/)
 
 # Előnézet
 Hamarosan...
