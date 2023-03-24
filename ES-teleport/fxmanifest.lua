@@ -8,3 +8,7 @@ description 'Teleport'
 client_scripts {
     'client.lua'
 }
+
+shared_scripts {
+	'config.lua'
+}
