@@ -1,9 +1,9 @@
-fx_version 'adamant' -- FX verzió (általában adamant, de van cerulean is, de az szokott buggolni)
-game 'gta5' -- GTA
+fx_version 'adamant'
+game 'gta5'
 
 author 'JocY'
-version '1.0.0' -- Verziószám (teljesen mindegy, szöveget is írhatsz)
-description 'Szkript' -- Leírás
+version '1.0.0'
+description 'Teleport'
 
 client_scripts {
     'client.lua'
