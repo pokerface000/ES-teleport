@@ -12,7 +12,7 @@ Teleport For ESX server
 [k5_notify](https://github.com/kac5a/k5_notify/)
 
 # Előnézet
-Hamarosan...
+![Előnézet](https://imgur.com/a/HFd0vLo)
 
 # Utóirat
 Egy ingyenes notify-t használtam amit akár cserélhettek is! Ha szeretnél + teleportot akkor azt a 'client.lua'-ban tudod jozzáadni.
