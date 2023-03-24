@@ -15,4 +15,5 @@ Teleport For ESX server
 Hamarosan...
 
 # Utóirat
-Egy ingyenes notify-t használtam amit akár cserélhettek is! Ha szeretnél + parancsokat akkor azt a 'client.lua'-ban tudod (Útmutató az 'utmutato.txt' fájlban)
+Egy ingyenes notify-t használtam amit akár cserélhettek is! Ha szeretnél + teleportot akkor azt a 'client.lua'-ban tudod jozzáadni.
+
