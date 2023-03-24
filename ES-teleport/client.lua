@@ -1,30 +1,17 @@
-local varos = vector3(330.5396, -208.8254, 54.0863)
-local sandy = vector3(1729.1202, 3319.2014, 41.2235)
-local humane = vector3(3611.0066, 3741.2886, 28.6901)
+ESX = exports['es_extended']:getSharedObject()
 
 Citizen.CreateThread(function()
-        RegisterCommand("varos", function()
-    exports["k5_notify"]:notify('Szerver', 'Hamarosan teleportálás', 'info', 2000)
-Citizen.Wait(3000)
-        SetEntityCoords(PlayerPedId(), varos.x, varos.y, varos.z, false, false, false, false)
-        exports["k5_notify"]:notify('Szerver', 'Sikeres teleport!', 'success', 5000)
-    end)
+ for _, data in pairs(Config.Loc) do
+        RegisterCommand(data[1], function(source, args, rawCommand)
+             local ped = PlayerPedId()
+             SetEntityCoords(ped, data[2], false, false, false, true)
+             if Config.NotifyType == "K5" then
+                 exports["k5_notify"]:notify('Szerver', 'Sikeres teleport!', 'success', 5000)                                
+             elseif Config.NotifyType == "ESX" then
+                  ESX.ShowNotification("Sikeres teleport!", "success", 5000)                              
+             end
+        end)
+    end
 end)
 
-Citizen.CreateThread(function()
-        RegisterCommand("sandy", function()
-    exports["k5_notify"]:notify('Szerver', 'Hamarosan teleportálás', 'info', 2000)
-Citizen.Wait(3000)
-        SetEntityCoords(PlayerPedId(), sandy.x, sandy.y, sandy.z, false, false, false, false)
-        exports["k5_notify"]:notify('Szerver', 'Sikeres teleport!', 'success', 5000)
-    end)
-end)
 
-Citizen.CreateThread(function()
-        RegisterCommand("humane", function()
-    exports["k5_notify"]:notify('Szerver', 'Hamarosan teleportálás', 'info', 2000)
-Citizen.Wait(3000)
-        SetEntityCoords(PlayerPedId(), humane.x, humane.y, humane.z, false, false, false, false)
-        exports["k5_notify"]:notify('Szerver', 'Sikeres teleport!', 'success', 5000)
-    end)
-end)
