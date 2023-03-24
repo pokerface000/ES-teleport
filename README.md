@@ -1,5 +1,5 @@
-# ES-teleport
-Teleport For ESX server
+# Teleport Script
+Teleport script For ESX server
 
 
 
